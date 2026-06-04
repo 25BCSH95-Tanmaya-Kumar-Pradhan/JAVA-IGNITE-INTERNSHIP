@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Result_system {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[10];
+		System.out.println("Enter the marks of 10 students out of 100:");
+		for(int i =0;i<arr.length;i++)
+		{
+			arr[i]= sc.nextInt();
+		}
+		
+		int pass=0,fail=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]>=35)
+			{
+				pass++;
+			}
+			else
+			{
+				fail++;
+			}
+		}
+		
+		System.out.println("Passed students: "+pass);
+		System.out.println("Failed students: "+fail);
+		
+		sc.close();
+	}
+
+}
